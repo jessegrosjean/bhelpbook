@@ -1,0 +1,488 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 44;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		880FBC480D53C4450076B296 /* BHTTPServerlet.m in Sources */ = {isa = PBXBuildFile; fileRef = 880FBC470D53C4450076B296 /* BHTTPServerlet.m */; };
+		882987A70D560DD300EA393D /* BHelpBookServerlet.m in Sources */ = {isa = PBXBuildFile; fileRef = 882987A60D560DD300EA393D /* BHelpBookServerlet.m */; };
+		887D06B60D49559300B4A56C /* Blocks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 887D06B10D49557C00B4A56C /* Blocks.framework */; };
+		888F17D10D48F8EC009CA5CA /* BHelpBookWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 888F17D00D48F8EC009CA5CA /* BHelpBookWindowController.m */; };
+		888F17E20D48FA5E009CA5CA /* Plugin.xml in Resources */ = {isa = PBXBuildFile; fileRef = 888F17E10D48FA5E009CA5CA /* Plugin.xml */; };
+		88918F850D5377120000D574 /* BHelpBookWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88918F830D5377120000D574 /* BHelpBookWindow.xib */; };
+		8891917E0D5391D10000D574 /* BHTTPServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 889191790D5391D10000D574 /* BHTTPServer.m */; };
+		8891917F0D5391D10000D574 /* BHTTPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 8891917B0D5391D10000D574 /* BHTTPConnection.m */; };
+		889191800D5391D10000D574 /* BHTTPServerRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8891917D0D5391D10000D574 /* BHTTPServerRequest.m */; };
+		8891948B0D53B4820000D574 /* SmartyPants.pl in Resources */ = {isa = PBXBuildFile; fileRef = 8891948A0D53B4820000D574 /* SmartyPants.pl */; };
+		8891948D0D53B4880000D574 /* Markdown.pl in Resources */ = {isa = PBXBuildFile; fileRef = 8891948C0D53B4880000D574 /* Markdown.pl */; };
+		889194900D53B4960000D574 /* NSTask+runScriptNamed.m in Sources */ = {isa = PBXBuildFile; fileRef = 8891948F0D53B4960000D574 /* NSTask+runScriptNamed.m */; };
+		889309230D5B85C0002725F2 /* pluginDocumentationMissing.markdown in Resources */ = {isa = PBXBuildFile; fileRef = 8893091F0D5B85C0002725F2 /* pluginDocumentationMissing.markdown */; };
+		889309240D5B85C0002725F2 /* extensionPointDocumentationMissing.markdown in Resources */ = {isa = PBXBuildFile; fileRef = 889309200D5B85C0002725F2 /* extensionPointDocumentationMissing.markdown */; };
+		889309250D5B85C0002725F2 /* pluginDocumentationPageTemplate.html in Resources */ = {isa = PBXBuildFile; fileRef = 889309210D5B85C0002725F2 /* pluginDocumentationPageTemplate.html */; };
+		889309260D5B85C0002725F2 /* extensionPointDocumentationPageTemplate.html in Resources */ = {isa = PBXBuildFile; fileRef = 889309220D5B85C0002725F2 /* extensionPointDocumentationPageTemplate.html */; };
+		889309350D5B85FA002725F2 /* BPluginDevelopmentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 889309340D5B85FA002725F2 /* BPluginDevelopmentController.m */; };
+		889309450D5B8651002725F2 /* BlocksPlugin in Resources */ = {isa = PBXBuildFile; fileRef = 889309360D5B8651002725F2 /* BlocksPlugin */; };
+		88A3F8A60D58A7AE00E131F3 /* BHelpBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 88A3F8A50D58A7AE00E131F3 /* BHelpBook.m */; };
+		88A3F8AB0D58A7C700E131F3 /* BHelpBookPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 88A3F8AA0D58A7C700E131F3 /* BHelpBookPage.m */; };
+		88A3F9D70D58BF3800E131F3 /* page_template.html in Resources */ = {isa = PBXBuildFile; fileRef = 88A3F9D60D58BF3800E131F3 /* page_template.html */; };
+		88A3FA080D58C69900E131F3 /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = 88A3FA070D58C69900E131F3 /* style.css */; };
+		88A73CC60D6CD433000D0BC7 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88A73CC50D6CD433000D0BC7 /* WebKit.framework */; };
+		8D5B49B0048680CD000E48DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C167DFE841241C02AAC07 /* InfoPlist.strings */; };
+		8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		887D06B00D49557C00B4A56C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 887D06A90D49557C00B4A56C /* Blocks.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8DC2EF5B0486A6940098B216;
+			remoteInfo = Blocks;
+		};
+		887D06B30D49558C00B4A56C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 887D06A90D49557C00B4A56C /* Blocks.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
+			remoteInfo = Blocks;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		089C1672FE841209C02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		089C167EFE841241C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		089C167FFE841241C02AAC07 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		32DBCF630370AF2F00C91783 /* BHelpBook_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHelpBook_Prefix.pch; sourceTree = "<group>"; };
+		880FBC460D53C4450076B296 /* BHTTPServerlet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHTTPServerlet.h; sourceTree = "<group>"; };
+		880FBC470D53C4450076B296 /* BHTTPServerlet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHTTPServerlet.m; sourceTree = "<group>"; };
+		882987A50D560DD300EA393D /* BHelpBookServerlet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHelpBookServerlet.h; sourceTree = "<group>"; };
+		882987A60D560DD300EA393D /* BHelpBookServerlet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHelpBookServerlet.m; sourceTree = "<group>"; };
+		887D06A90D49557C00B4A56C /* Blocks.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Blocks.xcodeproj; path = ../Blocks/Blocks.xcodeproj; sourceTree = SOURCE_ROOT; };
+		888F17CF0D48F8EC009CA5CA /* BHelpBookWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHelpBookWindowController.h; sourceTree = "<group>"; };
+		888F17D00D48F8EC009CA5CA /* BHelpBookWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHelpBookWindowController.m; sourceTree = "<group>"; };
+		888F17E10D48FA5E009CA5CA /* Plugin.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Plugin.xml; sourceTree = "<group>"; };
+		88918F840D5377120000D574 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/BHelpBookWindow.xib; sourceTree = "<group>"; };
+		889191780D5391D10000D574 /* BHTTPServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHTTPServer.h; sourceTree = "<group>"; };
+		889191790D5391D10000D574 /* BHTTPServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHTTPServer.m; sourceTree = "<group>"; };
+		8891917A0D5391D10000D574 /* BHTTPConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHTTPConnection.h; sourceTree = "<group>"; };
+		8891917B0D5391D10000D574 /* BHTTPConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHTTPConnection.m; sourceTree = "<group>"; };
+		8891917C0D5391D10000D574 /* BHTTPServerRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHTTPServerRequest.h; sourceTree = "<group>"; };
+		8891917D0D5391D10000D574 /* BHTTPServerRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHTTPServerRequest.m; sourceTree = "<group>"; };
+		8891948A0D53B4820000D574 /* SmartyPants.pl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.perl; path = SmartyPants.pl; sourceTree = "<group>"; };
+		8891948C0D53B4880000D574 /* Markdown.pl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.perl; path = Markdown.pl; sourceTree = "<group>"; };
+		8891948E0D53B4960000D574 /* NSTask+runScriptNamed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTask+runScriptNamed.h"; sourceTree = "<group>"; };
+		8891948F0D53B4960000D574 /* NSTask+runScriptNamed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTask+runScriptNamed.m"; sourceTree = "<group>"; };
+		8893091F0D5B85C0002725F2 /* pluginDocumentationMissing.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pluginDocumentationMissing.markdown; sourceTree = "<group>"; };
+		889309200D5B85C0002725F2 /* extensionPointDocumentationMissing.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = extensionPointDocumentationMissing.markdown; sourceTree = "<group>"; };
+		889309210D5B85C0002725F2 /* pluginDocumentationPageTemplate.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = pluginDocumentationPageTemplate.html; sourceTree = "<group>"; };
+		889309220D5B85C0002725F2 /* extensionPointDocumentationPageTemplate.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = extensionPointDocumentationPageTemplate.html; sourceTree = "<group>"; };
+		889309330D5B85FA002725F2 /* BPluginDevelopmentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPluginDevelopmentController.h; sourceTree = "<group>"; };
+		889309340D5B85FA002725F2 /* BPluginDevelopmentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPluginDevelopmentController.m; sourceTree = "<group>"; };
+		889309360D5B8651002725F2 /* BlocksPlugin */ = {isa = PBXFileReference; lastKnownFileType = folder; path = BlocksPlugin; sourceTree = "<group>"; };
+		88A3F8A40D58A7AE00E131F3 /* BHelpBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHelpBook.h; sourceTree = "<group>"; };
+		88A3F8A50D58A7AE00E131F3 /* BHelpBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHelpBook.m; sourceTree = "<group>"; };
+		88A3F8A90D58A7C700E131F3 /* BHelpBookPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHelpBookPage.h; sourceTree = "<group>"; };
+		88A3F8AA0D58A7C700E131F3 /* BHelpBookPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHelpBookPage.m; sourceTree = "<group>"; };
+		88A3F9D60D58BF3800E131F3 /* page_template.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = page_template.html; sourceTree = "<group>"; };
+		88A3FA070D58C69900E131F3 /* style.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = style.css; sourceTree = "<group>"; };
+		88A73CC50D6CD433000D0BC7 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = /System/Library/Frameworks/WebKit.framework; sourceTree = "<absolute>"; };
+		8D5B49B6048680CD000E48DA /* BHelpBook.plugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BHelpBook.plugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D5B49B7048680CD000E48DA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2F7E65807B2D6F200F64583 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D5B49B3048680CD000E48DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				887D06B60D49559300B4A56C /* Blocks.framework in Frameworks */,
+				8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */,
+				88A73CC60D6CD433000D0BC7 /* WebKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		089C166AFE841209C02AAC07 /* BHelpBook */ = {
+			isa = PBXGroup;
+			children = (
+				887D06A90D49557C00B4A56C /* Blocks.xcodeproj */,
+				08FB77AFFE84173DC02AAC07 /* Classes */,
+				32C88E010371C26100C91783 /* Other Sources */,
+				089C167CFE841241C02AAC07 /* Resources */,
+				089C1671FE841209C02AAC07 /* Frameworks and Libraries */,
+				19C28FB8FE9D52D311CA2CBB /* Products */,
+			);
+			name = BHelpBook;
+			sourceTree = "<group>";
+		};
+		089C1671FE841209C02AAC07 /* Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7ACFEA557BF11CA2CBB /* Linked Frameworks */,
+				1058C7AEFEA557BF11CA2CBB /* Other Frameworks */,
+			);
+			name = "Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		089C167CFE841241C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8891948A0D53B4820000D574 /* SmartyPants.pl */,
+				8891948C0D53B4880000D574 /* Markdown.pl */,
+				8D5B49B7048680CD000E48DA /* Info.plist */,
+				88918F830D5377120000D574 /* BHelpBookWindow.xib */,
+				089C167DFE841241C02AAC07 /* InfoPlist.strings */,
+				888F17E10D48FA5E009CA5CA /* Plugin.xml */,
+				88A3F88C0D58A45800E131F3 /* HelpBook */,
+				889309140D5B85A0002725F2 /* XcodePluginTemplate */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		08FB77AFFE84173DC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8891948E0D53B4960000D574 /* NSTask+runScriptNamed.h */,
+				8891948F0D53B4960000D574 /* NSTask+runScriptNamed.m */,
+				889191780D5391D10000D574 /* BHTTPServer.h */,
+				889191790D5391D10000D574 /* BHTTPServer.m */,
+				8891917A0D5391D10000D574 /* BHTTPConnection.h */,
+				8891917B0D5391D10000D574 /* BHTTPConnection.m */,
+				8891917C0D5391D10000D574 /* BHTTPServerRequest.h */,
+				8891917D0D5391D10000D574 /* BHTTPServerRequest.m */,
+				880FBC460D53C4450076B296 /* BHTTPServerlet.h */,
+				880FBC470D53C4450076B296 /* BHTTPServerlet.m */,
+				88A3F8A40D58A7AE00E131F3 /* BHelpBook.h */,
+				88A3F8A50D58A7AE00E131F3 /* BHelpBook.m */,
+				88A3F8A90D58A7C700E131F3 /* BHelpBookPage.h */,
+				88A3F8AA0D58A7C700E131F3 /* BHelpBookPage.m */,
+				882987A50D560DD300EA393D /* BHelpBookServerlet.h */,
+				882987A60D560DD300EA393D /* BHelpBookServerlet.m */,
+				888F17CF0D48F8EC009CA5CA /* BHelpBookWindowController.h */,
+				888F17D00D48F8EC009CA5CA /* BHelpBookWindowController.m */,
+				889309330D5B85FA002725F2 /* BPluginDevelopmentController.h */,
+				889309340D5B85FA002725F2 /* BPluginDevelopmentController.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7ACFEA557BF11CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7AEFEA557BF11CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				089C167FFE841241C02AAC07 /* AppKit.framework */,
+				D2F7E65807B2D6F200F64583 /* CoreData.framework */,
+				089C1672FE841209C02AAC07 /* Foundation.framework */,
+				88A73CC50D6CD433000D0BC7 /* WebKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FB8FE9D52D311CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D5B49B6048680CD000E48DA /* BHelpBook.plugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		32C88E010371C26100C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32DBCF630370AF2F00C91783 /* BHelpBook_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		887D06AA0D49557C00B4A56C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				887D06B10D49557C00B4A56C /* Blocks.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		889309140D5B85A0002725F2 /* XcodePluginTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				889309360D5B8651002725F2 /* BlocksPlugin */,
+				8893091F0D5B85C0002725F2 /* pluginDocumentationMissing.markdown */,
+				889309200D5B85C0002725F2 /* extensionPointDocumentationMissing.markdown */,
+				889309210D5B85C0002725F2 /* pluginDocumentationPageTemplate.html */,
+				889309220D5B85C0002725F2 /* extensionPointDocumentationPageTemplate.html */,
+			);
+			name = XcodePluginTemplate;
+			sourceTree = "<group>";
+		};
+		88A3F88C0D58A45800E131F3 /* HelpBook */ = {
+			isa = PBXGroup;
+			children = (
+				88A3F9D50D58BF2700E131F3 /* Templates */,
+			);
+			name = HelpBook;
+			sourceTree = "<group>";
+		};
+		88A3F9D50D58BF2700E131F3 /* Templates */ = {
+			isa = PBXGroup;
+			children = (
+				88A3F9D60D58BF3800E131F3 /* page_template.html */,
+				88A3FA070D58C69900E131F3 /* style.css */,
+			);
+			name = Templates;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D5B49AC048680CD000E48DA /* BHelpBook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB913A08733D840010E9CD /* Build configuration list for PBXNativeTarget "BHelpBook" */;
+			buildPhases = (
+				888F17EA0D48FB2C009CA5CA /* Run genstrings Script */,
+				8D5B49AF048680CD000E48DA /* Resources */,
+				8D5B49B1048680CD000E48DA /* Sources */,
+				8D5B49B3048680CD000E48DA /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				887D06B40D49558C00B4A56C /* PBXTargetDependency */,
+			);
+			name = BHelpBook;
+			productInstallPath = "$(HOME)/Library/Bundles";
+			productName = BHelpBook;
+			productReference = 8D5B49B6048680CD000E48DA /* BHelpBook.plugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		089C1669FE841209C02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB913E08733D840010E9CD /* Build configuration list for PBXProject "BHelpBook" */;
+			compatibilityVersion = "Xcode 3.0";
+			hasScannedForEncodings = 1;
+			mainGroup = 089C166AFE841209C02AAC07 /* BHelpBook */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 887D06AA0D49557C00B4A56C /* Products */;
+					ProjectRef = 887D06A90D49557C00B4A56C /* Blocks.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				8D5B49AC048680CD000E48DA /* BHelpBook */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		887D06B10D49557C00B4A56C /* Blocks.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Blocks.framework;
+			remoteRef = 887D06B00D49557C00B4A56C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D5B49AF048680CD000E48DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D5B49B0048680CD000E48DA /* InfoPlist.strings in Resources */,
+				888F17E20D48FA5E009CA5CA /* Plugin.xml in Resources */,
+				88918F850D5377120000D574 /* BHelpBookWindow.xib in Resources */,
+				8891948B0D53B4820000D574 /* SmartyPants.pl in Resources */,
+				8891948D0D53B4880000D574 /* Markdown.pl in Resources */,
+				88A3F9D70D58BF3800E131F3 /* page_template.html in Resources */,
+				88A3FA080D58C69900E131F3 /* style.css in Resources */,
+				889309230D5B85C0002725F2 /* pluginDocumentationMissing.markdown in Resources */,
+				889309240D5B85C0002725F2 /* extensionPointDocumentationMissing.markdown in Resources */,
+				889309250D5B85C0002725F2 /* pluginDocumentationPageTemplate.html in Resources */,
+				889309260D5B85C0002725F2 /* extensionPointDocumentationPageTemplate.html in Resources */,
+				889309450D5B8651002725F2 /* BlocksPlugin in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		888F17EA0D48FB2C009CA5CA /* Run genstrings Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run genstrings Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ $CONFIGURATION != 'Release' ]; then\n\texit\nfi\n\ngenstrings -s BLocalizedString -o English.lproj/ *.[mch] */*.[mch]";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D5B49B1048680CD000E48DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				888F17D10D48F8EC009CA5CA /* BHelpBookWindowController.m in Sources */,
+				8891917E0D5391D10000D574 /* BHTTPServer.m in Sources */,
+				8891917F0D5391D10000D574 /* BHTTPConnection.m in Sources */,
+				889191800D5391D10000D574 /* BHTTPServerRequest.m in Sources */,
+				889194900D53B4960000D574 /* NSTask+runScriptNamed.m in Sources */,
+				880FBC480D53C4450076B296 /* BHTTPServerlet.m in Sources */,
+				882987A70D560DD300EA393D /* BHelpBookServerlet.m in Sources */,
+				88A3F8A60D58A7AE00E131F3 /* BHelpBook.m in Sources */,
+				88A3F8AB0D58A7C700E131F3 /* BHelpBookPage.m in Sources */,
+				889309350D5B85FA002725F2 /* BPluginDevelopmentController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		887D06B40D49558C00B4A56C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Blocks;
+			targetProxy = 887D06B30D49558C00B4A56C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		089C167DFE841241C02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C167EFE841241C02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		88918F830D5377120000D574 /* BHelpBookWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				88918F840D5377120000D574 /* English */,
+			);
+			name = BHelpBookWindow.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB913B08733D840010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = BHelpBook_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+					"-undefined",
+					dynamic_lookup,
+				);
+				PRODUCT_NAME = BHelpBook;
+				WRAPPER_EXTENSION = plugin;
+			};
+			name = Debug;
+		};
+		1DEB913C08733D840010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = BHelpBook_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+					"-undefined",
+					dynamic_lookup,
+				);
+				PRODUCT_NAME = BHelpBook;
+				WRAPPER_EXTENSION = plugin;
+			};
+			name = Release;
+		};
+		1DEB913F08733D840010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.5.sdk";
+			};
+			name = Debug;
+		};
+		1DEB914008733D840010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.5.sdk";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB913A08733D840010E9CD /* Build configuration list for PBXNativeTarget "BHelpBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB913B08733D840010E9CD /* Debug */,
+				1DEB913C08733D840010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB913E08733D840010E9CD /* Build configuration list for PBXProject "BHelpBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB913F08733D840010E9CD /* Debug */,
+				1DEB914008733D840010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 089C1669FE841209C02AAC07 /* Project object */;
+}

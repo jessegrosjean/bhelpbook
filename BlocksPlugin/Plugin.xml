@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin
+	id="com.yourcompany.BlocksPlugin"
+	label="BlocksPlugin"
+	version="1.0.0"
+	info="BlocksPlugin">
+
+	<requirement bundle="com.blocks.Blocks"/>
+	<requirement bundle="com.blocks.BUserInterface"/>
+	
+	<extension point="com.blocks.BUserInterface.menus" processOrder="1">
+		<menu id="com.blocks.BUserInterface.menus.main">
+			<menuitem title="%BlocksPluginMenu" id="blocksPluginMenu" submenu="com.yourcompany.BlocksPlugin.menus.main.blocksPluginMenu" location="after:edit" />
+		</menu>
+
+		<menu id="com.yourcompany.BlocksPlugin.menus.main.blocksPluginMenu">
+			<menuitem title="%BlocksPlugin Menu Item..." id="blocksPluginMenuItem" action="blocksPluginMenuItemAction:" target="BlocksPluginController sharedInstance" />
+		</menu>
+	</extension>
+	
+</plugin>

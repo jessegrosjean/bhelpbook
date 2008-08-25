@@ -1,0 +1,10 @@
+body { font:1.0em 'Lucida Grande'; margin:0px; padding:0px; }
+h1 { font-size:1.6em; }
+h2 { }
+h3 { margin-botton:0px; }
+p { }
+a { font-weight: bold; text-decoration: none; }
+a:hover { text-decoration: underline; }
+#header { margin:1em; }
+#header img { vertical-align:middle; margin-top:-6px; padding-right:6px; }
+#content { margin:1em; }

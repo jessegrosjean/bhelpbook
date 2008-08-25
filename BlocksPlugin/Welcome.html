@@ -1,0 +1,18 @@
+# Welcome!
+
+This project will build a new Blocks plugin. It should build as is without requiring any changes. The result will be a `.plugin` file that will add a new menu and menu item when installed in a Blocks based application. To try this out:
+
+1. Quit the application that you want to install the plugin in.
+2. Copy the plugin into the applications plugins folder ~/Library/Application Support/APPLICATION_NAME/Plugins
+3. Restart the application that you are installing into.
+
+If things don't work as expected check in Console.app, Blocks tries to print lots of logging info when something doesn't work correctly.
+
+Now that you have a working plugin, it is time to turn it into YOUR working plugin. To do that:
+
+1. Browse the [AssembledDocumentation.html](AssembledDocumentation.html) file. This file contains api/extension point documentation for all plugins that existed at the time that this project was generated.
+2. Browse the AssembledHeaders folder that's also part of this projectto see any public headers declared by the different plugins.
+3. Choose the plugins and extension points that you're plugin will use and extend. Feel free to delete the other headers that you won't be using.
+4. Add a `requirement` element to your `Plugin.xml` file for each plugin that you want to use.
+5. Add an `extension` elemeent to your `Plugin.xml` file for each extension that you want to create.
+6. Feel free to ask questions in the http://hogbaysoftware.com/forums

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin
+	id="com.blocks.BHelpBook"
+	label="Help Book"
+	version="1.0.0"
+	info="Help Book">
+
+	<documentation>
+		<p>The BHelpBook is responsible for creating the application's help book.</p>
+	</documentation>
+
+	<requirement bundle="com.blocks.Blocks" version="1.0.0" />
+	<requirement bundle="com.blocks.BUserInterface" version="1.0.0" />
+	
+	<extension-point id="pages" label="Help Book Pages" />
+
+	<extension point="com.blocks.BUserInterface.menus" processOrder="1">
+		<menu id="com.blocks.BUserInterface.menus.main.help">
+			<menuitem title="%Jesse's Help Book" id="help" action="showWindow:" target="BHelpBookWindowController sharedInstance" />
+		</menu>
+	</extension>
+
+	<extension point="com.blocks.BHelpBook.pages">
+		<page name="all_topics" label="%All PROCESS_NAME help topics" />
+		<page name="keyboard_shortcuts" label="%PROCESS_NAME keyboard shortcuts" />
+	</extension>
+	
+</plugin>
